@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+@import url('https://fonts.googleapis.com/css2?family=Inter:400,900');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+/* Rest of your CSS code */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em; /* Small font size */
+    padding-bottom: 20px;
+}
+
+.navbar a {
+    margin-right: 16px;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+:root {
+    --width: 720px;
+    --font-main: "Space Mono", monospace;
+    --font-secondary: "Space Mono", monospace;
+    --font-paragraphs: "Montserrat", sans-serif;
+    --font-scale: 1em;
+    --background-image: linear-gradient(to right top, #d65db1, #e05fab, #e961a5, #f1649f, #f86899, #fc6f8e, #ff7785, #ff807d, #ff8f72, #ffa168, #ffb461, #ffc75f);
+    --background-color: #415a77;
+    --heading-color: #D2F1E4;
+    --text-color: #1f2937; /* Updated paragraph color */
+    --link-color: #6441a5; /* Updated link color */
+    --visited-color: #9d4edd;
+    --note-color: #495057; /* Updated note color */
+    --code-background-color: #f2f2f2;
+    --code-color: #222;
+    --blockquote-color: #222;
+}
+
+body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-image: var(--background-image);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+
+}
+
+strong, b {
+    color: var(--heading-color);
+    font-weight: 900;
+}
+
+button {
+    margin: 0;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+}
+
+hr {
+    border: 0;
+    border-top: 1px dashed;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    font-family: monospace;
+    padding: 2px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+}
+
+blockquote {
+    border-left: 1px solid #999;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+footer {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    padding: 25px 0;
+    text-align: center;
+    margin-bottom: -100px;
+}
+
+footer p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.9em
+}
+
+.title:hover {
+    text-decoration: none;
+}
+
+.title h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+p, li {
+    font-family: 'Inter', sans-serif; /* Updated font for paragraphs and list items */
+    font-size: 1em; /* Updated font size for paragraphs and list items */
+}
+
+#skills {
+    margin-top: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.skill-category {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    min-width: calc(50% - 30px);
+    margin-bottom: 10px; /* Add this line to reduce the gap */
+}
+
+.skill-category h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.note {
+    font-size: 0.9em;
+    color: var(--note-color); /* Updated note color */
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .skill-category {
+        min-width: 100%;
+    }
+}
+
+h2.skills-heading {
+    margin-bottom: 1px; /* Adjust this value to achieve the desired gap */
+}
+
+.mattea-title h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700; /* Update the font-weight */
+    color: #fff;
+    font-size: 3em; /* Update the font-size */
+    letter-spacing: 0.063em;
+    line-height: 1;
+}
+
+.about-me p {
+    font-family: 'Space Mono', monospace;
+    font-size: 1em;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    border-left: 3px solid #fff;
+    background-color: rgba(189, 189, 189, 0.1);
+    padding: 15px 8px 15px 17px;
+    border-radius: 5px;
+}
+
+.timeline {
+    max-width: 600px; /* Added a new class for date width */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+main {
+    margin-bottom: 20px;
+}
